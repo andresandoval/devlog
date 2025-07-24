@@ -16,6 +16,7 @@ Everything is written in Markdown and organized by date for easy reference — l
 ## 📁 Structure
 
 Entries are stored in the `_posts/` folder using the [Jekyll](https://jekyllrb.com/) blog format.
+Reference: https://github.com/barryclark/jekyll-now
 
 ## Local development
 
