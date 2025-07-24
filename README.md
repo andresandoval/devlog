@@ -17,3 +17,13 @@ Everything is written in Markdown and organized by date for easy reference — l
 
 Entries are stored in the `_posts/` folder using the [Jekyll](https://jekyllrb.com/) blog format.
 
+## Local development
+
+run
+
+```console
+docker compose -f docker-compose.yaml up
+```
+
+and then open http://localhost:8080/devlog/ on your browser
+

@@ -1,0 +1,21 @@
+version: '3.8'
+
+x-compose:
+  project: devlog-jekyll-server
+
+services:
+  jekyll:
+    build: .
+    image: local-ruby-jekyll-image
+    container_name: devlog-jekyll-server
+    tty: true
+    volumes:
+      - .:/app
+    ports:
+      - "8080:4000"
+    networks:
+      - devlog-jekyll-network
+    command: bundle install && bundle exec jekyll serve --watch --drafts --force_polling --trace --host 0.0.0.0 --port 4000
+networks:
+  devlog-jekyll-network:
+    driver: bridge
